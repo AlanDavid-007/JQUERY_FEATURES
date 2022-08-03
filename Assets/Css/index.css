@@ -184,3 +184,21 @@ html {
     position: absolute;
     border-radius: 50%;
     }  
+    
+    @media (min-width:501px) {
+      .card-mobile {
+        display: none;
+      }
+      .card-desktop {
+        display: flex;
+      }
+    }
+
+    @media (max-width:500px) {
+      .card-mobile {
+        display: flex;
+      }
+      .card-desktop {
+        display: none;
+      }
+    }

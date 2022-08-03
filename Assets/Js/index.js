@@ -11,16 +11,22 @@ $(document).ready(function () {
     //     $('.teste').text('Urubu');        
     // });                  
   });
-  $('.button-teste-texto').click(function() {
+
+  // Take buttons's attr
+  $('.button-teste-texto').click(function () {
     var nome = $(this).attr('name');
     $('.teste').text(nome);
   })
+
+  // Fade buttons
   $(".button-teste-fadein").click(function () {
     $('.teste').fadeIn();
   });
   $(".button-teste-fadeout").click(function () {
     $('.teste').fadeOut();
   });
+
+  // FadeToggle Imgs
   $(".button-fade1").click(function () {
     $('.img1').fadeToggle();
   });
@@ -30,5 +36,11 @@ $(document).ready(function () {
   $(".button-fade3").click(function () {
     $('.img3').fadeToggle();
   });
+
+  // Button switch img
+  $(".button-troca").click(function () {
+    $('.img-troca').attr('src', 'Assets/Img/aranha.jfif');
+  });
+
 });
 
